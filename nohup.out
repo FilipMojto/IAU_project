@@ -1,0 +1,38 @@
+[I 2023-10-29 16:12:55.670 ServerApp] Package notebook took 0.0000s to import
+[I 2023-10-29 16:12:55.690 ServerApp] Package jupyter_lsp took 0.0193s to import
+[W 2023-10-29 16:12:55.690 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-29 16:12:55.699 ServerApp] Package jupyter_server_terminals took 0.0084s to import
+[I 2023-10-29 16:12:55.700 ServerApp] Package jupyterlab took 0.0000s to import
+[I 2023-10-29 16:12:56.054 ServerApp] Package notebook_shim took 0.0000s to import
+[W 2023-10-29 16:12:56.055 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-10-29 16:12:56.057 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2023-10-29 16:12:56.062 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-10-29 16:12:56.066 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-10-29 16:12:56.071 ServerApp] notebook | extension was successfully linked.
+[I 2023-10-29 16:12:56.419 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-10-29 16:12:56.444 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-10-29 16:12:56.454 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2023-10-29 16:12:56.456 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-10-29 16:12:56.461 LabApp] JupyterLab extension loaded from /home/johndym/.local/lib/python3.10/site-packages/jupyterlab
+[I 2023-10-29 16:12:56.461 LabApp] JupyterLab application directory is /home/johndym/.local/share/jupyter/lab
+[I 2023-10-29 16:12:56.462 LabApp] Extension Manager is 'pypi'.
+[I 2023-10-29 16:12:56.465 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-10-29 16:12:56.467 ServerApp] notebook | extension was successfully loaded.
+[I 2023-10-29 16:12:56.469 ServerApp] Serving notebooks from local directory: /mnt/c/Users/fmojt/Documents/school/IAU/.virenv
+[I 2023-10-29 16:12:56.470 ServerApp] Jupyter Server 2.8.0 is running at:
+[I 2023-10-29 16:12:56.470 ServerApp] http://localhost:8888/tree?token=66b8e9a38923b8d3d75bf37ae84a246826e6bab83a96ec76
+[I 2023-10-29 16:12:56.471 ServerApp]     http://127.0.0.1:8888/tree?token=66b8e9a38923b8d3d75bf37ae84a246826e6bab83a96ec76
+[I 2023-10-29 16:12:56.471 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2023-10-29 16:12:59.764 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/johndym/.local/share/jupyter/runtime/jpserver-694-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=66b8e9a38923b8d3d75bf37ae84a246826e6bab83a96ec76
+        http://127.0.0.1:8888/tree?token=66b8e9a38923b8d3d75bf37ae84a246826e6bab83a96ec76
+[I 2023-10-29 16:13:02.069 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2023-10-29 16:13:21.915 ServerApp] Kernel started: 6d357f04-5e5b-4fb3-8ab5-7f49b3beeaa1
+[I 2023-10-29 16:13:22.569 ServerApp] Connecting to kernel 6d357f04-5e5b-4fb3-8ab5-7f49b3beeaa1.
+[I 2023-10-29 16:15:21.661 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 16:31:21.871 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 19:34:39.548 ServerApp] Starting buffering for 6d357f04-5e5b-4fb3-8ab5-7f49b3beeaa1:4e107e73-4440-4776-9291-388aa579a9b4
