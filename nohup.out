@@ -277,3 +277,89 @@
 [W 2023-10-29 21:52:48.211 ServerApp] 400 GET /api/contents/EDA_report.ipynb?type=notebook&content=1&1698612768150 (fe62369e8d2d49b9b18c2441e6c7cc57@127.0.0.1) 56.95ms referer=http://localhost:8889/notebooks/EDA_report.ipynb
 [I 2023-10-29 21:53:39.069 ServerApp] Kernel started: 83af35fd-85de-47e6-af5a-11f40fbf1858
 [I 2023-10-29 21:53:39.914 ServerApp] Connecting to kernel 83af35fd-85de-47e6-af5a-11f40fbf1858.
+[W 2023-10-29 21:59:04.128 ServerApp] Unknown error checking if file '/mnt/c/Users/fmojt/Documents/school/IAU/.virenv/EDA_report (2).ipynb' is hidden
+    Traceback (most recent call last):
+      File "/home/johndym/.local/lib/python3.10/site-packages/jupyter_server/services/contents/filemanager.py", line 770, in _dir_model
+        contents.append(await self.get(path=f"{path}/{name}", content=False))
+      File "/home/johndym/.local/lib/python3.10/site-packages/jupyter_server/services/contents/filemanager.py", line 875, in get
+        model = await self._notebook_model(path, content=content)
+      File "/home/johndym/.local/lib/python3.10/site-packages/jupyter_server/services/contents/filemanager.py", line 822, in _notebook_model
+        model = self._base_model(path)
+      File "/home/johndym/.local/lib/python3.10/site-packages/jupyter_server/services/contents/filemanager.py", line 226, in _base_model
+        info = os.lstat(os_path)
+    FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Users/fmojt/Documents/school/IAU/.virenv/EDA_report (2).ipynb'
+[I 2023-10-29 21:59:08.209 ServerApp] Starting buffering for 83af35fd-85de-47e6-af5a-11f40fbf1858:2d093d70-635f-4187-ae82-472b30caa415
+/home/johndym/.local/lib/python3.10/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+[W 2023-10-29 21:59:09.618 ServerApp] Notebook EDA_report.ipynb is not trusted
+[W 2023-10-29 21:59:11.960 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 21:59:12.280 ServerApp] Connecting to kernel 83af35fd-85de-47e6-af5a-11f40fbf1858.
+[I 2023-10-29 22:01:12.158 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:01:12.160 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:03:12.356 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:03:12.357 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:05:12.545 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:05:12.547 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:07:12.783 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:07:12.785 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:09:12.967 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:09:12.968 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:11:13.179 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:11:13.180 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:13:13.402 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:13:13.404 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:15:13.653 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:15:13.655 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:17:13.809 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:17:13.810 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:19:13.983 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:19:13.984 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:21:14.152 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:23:14.393 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:25:14.621 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:27:14.866 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:29:15.123 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:31:15.300 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:33:15.511 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:35:15.751 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:37:15.970 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:43:16.200 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:45:16.418 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:47:16.610 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:47:54.569 ServerApp] Kernel started: cfea9b81-9324-43fb-b345-d85668c2392d
+[I 2023-10-29 22:47:55.249 ServerApp] Connecting to kernel cfea9b81-9324-43fb-b345-d85668c2392d.
+[I 2023-10-29 22:48:33.261 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:48:33.264 ServerApp] Notebook EDA_report.ipynb is not trusted
+[I 2023-10-29 22:48:34.464 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 22:48:34.465 ServerApp] Notebook EDA_report.ipynb is not trusted
+[W 2023-10-29 22:48:34.583 ServerApp] /mnt/c/Users/fmojt/Documents/school/IAU/.virenv/.~EDA_report.ipynb doesn't exist
+[I 2023-10-29 22:49:03.333 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:49:04.853 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:51:05.033 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:53:05.220 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 22:59:05.477 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:01:05.757 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:03:05.983 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:05:06.270 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:07:06.483 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:09:06.710 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:11:06.922 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:13:07.121 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:14:53.022 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 23:14:53.181 ServerApp] /mnt/c/Users/fmojt/Documents/school/IAU/.virenv/.~EDA_report.ipynb doesn't exist
+[I 2023-10-29 23:15:00.004 ServerApp] Kernel restarted: 83af35fd-85de-47e6-af5a-11f40fbf1858
+[I 2023-10-29 23:15:00.010 ServerApp] Starting buffering for 83af35fd-85de-47e6-af5a-11f40fbf1858:863da288-0ff2-4298-915d-1254d59472f6
+[I 2023-10-29 23:15:00.021 ServerApp] Connecting to kernel 83af35fd-85de-47e6-af5a-11f40fbf1858.
+[I 2023-10-29 23:15:00.022 ServerApp] Restoring connection for 83af35fd-85de-47e6-af5a-11f40fbf1858:863da288-0ff2-4298-915d-1254d59472f6
+[I 2023-10-29 23:16:53.254 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 23:16:53.400 ServerApp] /mnt/c/Users/fmojt/Documents/school/IAU/.virenv/.~EDA_report.ipynb doesn't exist
+[I 2023-10-29 23:18:53.494 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:20:53.692 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:22:16.350 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 23:22:16.504 ServerApp] /mnt/c/Users/fmojt/Documents/school/IAU/.virenv/.~EDA_report.ipynb doesn't exist
+[I 2023-10-29 23:22:28.527 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:22:29.402 ServerApp] Saving file at /EDA_report.ipynb
+[W 2023-10-29 23:22:29.568 ServerApp] /mnt/c/Users/fmojt/Documents/school/IAU/.virenv/.~EDA_report.ipynb doesn't exist
+[I 2023-10-29 23:22:29.993 ServerApp] Saving file at /EDA_report.ipynb
+[I 2023-10-29 23:22:30.921 ServerApp] Starting buffering for 83af35fd-85de-47e6-af5a-11f40fbf1858:863da288-0ff2-4298-915d-1254d59472f6
+[I 2023-10-29 23:22:39.810 ServerApp] Starting buffering for cfea9b81-9324-43fb-b345-d85668c2392d:18b489e0-ae49-4c01-9676-1ef830d7a59c
