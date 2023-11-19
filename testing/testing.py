@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import matplotlib.pyplot as plt
 
 # Define file paths for data
-SESSION_FILE_PATH = "resources/session.csv"
+SESSION_FILE_PATH = "../resources/session.csv"
 
 # Read session data into a DataFrame
 df_sess = pd.read_csv(SESSION_FILE_PATH, delimiter='\t')

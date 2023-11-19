@@ -9,7 +9,7 @@ from matplotlib import pyplot
 import seaborn as sns
 
 # Read the CSV file
-sess_df = pd.read_csv('fixed_sess.csv')
+sess_df = pd.read_csv('../resources/fixed_sess.csv')
 
 # Only num columns for correlation
 numeric_columns = sess_df.select_dtypes(include=['float64', 'int64']).columns

@@ -7,9 +7,9 @@ def identify_outliers(x):
 
     return x[(x > upper) | (x < lower)]
 
-PRODUCT_FILE_PATH = "resources/product.csv"
-USER_FILE_PATH = "resources/user.csv"
-SESSION_FILE_PATH = "resources/session.csv"
+PRODUCT_FILE_PATH = "../resources/product.csv"
+USER_FILE_PATH = "../resources/user.csv"
+SESSION_FILE_PATH = "../resources/session.csv"
 
 # Read product, user, and session data into DataFrames
 df_pro = pd.read_csv(PRODUCT_FILE_PATH, delimiter='\t')
