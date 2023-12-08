@@ -17,3 +17,5 @@ The repository contains three Jupyter Notebook reports each representing a separ
 Every report involes an important phase in __Data Science__. The first repository means __Exploratory Data Analysis__, the second stands for __Machine Learning Preprocessing__ and the last focuses on __Machine Learning__.
 
 Apart from the reports, there is also a python module called *IDA_utils_.py* which provides various utility functions that are used in the reports.
+
+The folder __testing__ includes some python files designed to test various __hypotheses__, __data dependencies__ and so on.
