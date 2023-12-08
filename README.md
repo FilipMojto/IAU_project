@@ -6,3 +6,8 @@ This repository represents implementation of semestral project from FIIT faculty
 
 The project is currently being implemented by 2 students of FIIT, __Čverčko Michael John__ and __Mojto Filip__
 
+## Content
+
+The repository contains three Jupyter Notebook reports each representing a separate task of the whole project.
+
+    a)
