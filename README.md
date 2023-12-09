@@ -18,6 +18,6 @@ Every report involes an important phase in __Data Science__. The first repositor
 
 Apart from the reports, there is also a python module called *IDA_utils_.py* which provides various utility functions that are used in the reports.
 
-The folder __testing__ includes some python files designed to test various __hypotheses__, __data dependencies__ and so on. The folder __resources__ includes .csv files which contain the data which the project analyzes.
+The folder __testing__ includes some python files designed to test various __hypotheses__, __data dependencies__ and so on. The folder __resources__ includes three .csv files which contain the data that the project analyzes.
 
 
