@@ -7,16 +7,13 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, PowerTransformer
 def num_to_category(df: pd.DataFrame, col: str, num_bins: int = None):
 
     if not num_bins:
-        num_bins = abs(math.floor(df[col].max()))
-
-    print(num_bins)
+        num_bins = math.floor(df[col].max())        
 
     df[col] = pd.cut(df[col], bins=num_bins, labels=False)
     df.drop(col, axis=1)
 
 def timestamp_to_category(df: pd.DataFrame, col: str, mode: Literal['day', 'month', 'year'] = 'month'):
     df[col] = pd.to_datetime(df[col])
-    # Extract month and create a new column 'month'
 
     if mode == 'day':
         df[col] = df[col].dt.day
@@ -29,7 +26,7 @@ def split_data(df: pd.DataFrame, proportion: float = 0.8):
 
     if not 0 <= proportion <= 1:
         raise ValueError("Invalid proportion value, valid is within 0 and 1!")
-    #print("ERE!")
+
     num_rows_first_subset = int(len(df) * proportion)
 
     train_df = df.head(num_rows_first_subset).copy()
