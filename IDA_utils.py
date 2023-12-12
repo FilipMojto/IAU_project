@@ -181,6 +181,7 @@ def frequency_tables(df: pd.DataFrame, target_column: str, predictors: tuple[str
     result = {}
 
     for predictor in predictors:
+        # here we use crosstab utility to get all the predictor value counts in combination with target column's
         freq_table = pd.crosstab(df[predictor], df[target_column])
         result[predictor] = freq_table
 
@@ -192,22 +193,30 @@ def one_rule_alg(freq_tables: Dict[str, pd.DataFrame], metric: Literal['accuracy
     rules = {}
 
     for table in freq_tables:
+
+        #confusion matrix
         positive = [0, 0]
         negative = [0, 0]
 
+        #here we iterate over all rows and according to their counts for ACK=1 or ACK = 0, we add it the positive or negative
         for index, row in freq_tables[table].iterrows():
 
             row_vals = row.items()
-            row_vals = list(row_vals)      
+            row_vals = list(row_vals) 
+
+            # if number of counts for ack = 1 > ack = 0, we add the values to the upper row of confusion matrix
+            # at the same time we create a rule for the specific predictor, for instance if pct_input = 5, then ACK = 1
             if row_vals[0][1] > row_vals[1][1]:
                 rules[table] = freq_tables[table].columns[0]
                 positive[0] +=  row_vals[0][1]
                 positive[1] += row_vals[1][1]
+            #otherwise we do the opposite
             else:
                 rules[table] = freq_tables[table].columns[1]
                 negative[0] +=  row_vals[0][1]
                 negative[1] += row_vals[1][1]
         
+        # here we use data from the confusion matrix in a formula used for the selected metric
         try:
             if metric == 'accuracy':
                 accuracies[table] = ((positive[0] + negative[1])/(positive[0] + positive[1] + negative[0] + negative[1]))
@@ -215,10 +224,9 @@ def one_rule_alg(freq_tables: Dict[str, pd.DataFrame], metric: Literal['accuracy
                 accuracies[table] = ((positive[0])/(positive[0] + positive[1]))
             elif metric == 'recall':
                 accuracies[table] = ((positive[0])/(positive[0] + negative[0]))
+        # this mainly happens in precision, when there are no predictors for ACK = 1
         except ZeroDivisionError:
             accuracies[table] = -1
-    
-
             
     return rules, accuracies, {'used_metric': metric}
 
